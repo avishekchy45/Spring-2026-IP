@@ -1,0 +1,8 @@
+# Ignore all contents of the .vscode folder
+.vscode/*
+
+# Except for these specific team configuration files:
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
