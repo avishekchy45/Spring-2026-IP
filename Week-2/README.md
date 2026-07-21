@@ -244,7 +244,7 @@ CSS selectors define which elements receive styling, and combinators describe re
 
 ---
 
-## Recommended Exercises
+## Recommended Hands-on Lab Exercises
 
 By the end of Week 2, complete the following practical tasks:
 
