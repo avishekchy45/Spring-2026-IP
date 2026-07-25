@@ -1,8 +1,8 @@
 # Week 2 Notes: HTML and CSS Fundamentals (HTML5 and CSS3)
 
-Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/Week-2)
+## Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/Week-2)
 
-## 1. HTML Document Structure ([Code](index.htm))
+## 1. HTML Document Structure ([Code](index.html))
 
 - What is HTML?
   - HyperText Markup Language
@@ -52,7 +52,7 @@ Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/Wee
 
 ---
 
-## 2. Semantic HTML5 Elements ([Code](semantic.htm))
+## 2. Semantic HTML5 Elements ([Code](semantic.html))
 
 - What is Semantic HTML?
   - Uses tags that clearly define the purpose of a webpage's content both to the browser and the developer
@@ -93,7 +93,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 3. Text Formatting ([Code](text_formatting.htm))
+## 3. Text Formatting ([Code](text_formatting.html))
 
 - Heading tags
 - Paragraph
@@ -111,7 +111,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 4. Lists ([Code](lists.htm))
+## 4. Lists ([Code](lists.html))
 
 - Ordered List
 - Unordered List
@@ -120,7 +120,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 5. Tables ([Code](tables.htm))
+## 5. Tables ([Code](tables.html))
 
 - Table structure
 - Rows
@@ -132,7 +132,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 6. Images ([Code](images.htm))
+## 6. Images ([Code](images.html))
 
 - Image formats
 - Relative vs Absolute path
@@ -141,7 +141,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 7. Hyperlinks ([Code](links.htm))
+## 7. Hyperlinks ([Code](links.html))
 
 - Absolute URL
 - Relative URL
@@ -153,7 +153,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 8. Forms ([Code](forms.htm))
+## 8. Forms ([Code](forms.html))
 
 - Purpose of forms
 - Form structure
@@ -163,12 +163,13 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 - GET vs POST
 - Placeholder
 - Required fields
+- Importance of `name` attribute
 
 HTML5 introduces semantic input types (such as `email`, `url`, `number`, and `date`) and built-in client-side validation, but server-side validation is still essential. ([SitePoint][forms])
 
 ---
 
-## 9. Multimedia ([Code](multimedia.htm))
+## 9. Multimedia ([Code](multimedia.html))
 
 - Audio
 - Video
@@ -218,7 +219,7 @@ HTML validation checks for structural and specification errors, such as missing 
 
 ---
 
-## 13. Inline vs Internal vs External CSS ([Code](inline-internal-external-css.htm))
+## 13. Inline vs Internal vs External CSS ([Code](inline-internal-external-css.html))
 
 - Inline CSS
 - Internal CSS
@@ -228,7 +229,7 @@ HTML validation checks for structural and specification errors, such as missing 
 
 ---
 
-## 14. CSS Selectors ([Code](selectors.htm))
+## 14. CSS Selectors ([Code](selectors.html))
 
 - Universal selector (`*`)
 - Element selector
