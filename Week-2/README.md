@@ -2,7 +2,7 @@
 
 ## Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/Week-2)
 
-## Project Setup Instructions ([Getting Started](getting-started.md))
+## Project Setup Instructions: [Getting Started](getting-started.md)
 
 ## 1. HTML Document Structure ([Code](index.html))
 
