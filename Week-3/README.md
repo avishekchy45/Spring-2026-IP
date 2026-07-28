@@ -82,11 +82,13 @@ By the end of Week 3, complete the following practical tasks:
 ---
 
 2.  Practice collaborative Git workflows, including cloning repositories, creating branches, and submitting pull requests for code review. Follow the steps below:
+
     - **Accept Repository Invitation**
       - Check your email for a repository collaborator invitation.
       - Click the acceptance link to gain access to the repo.
-    - Clone the Repository.
-    - Clone the repository to your local machine.
+
+    - **Clone the Repository**
+      - Clone the repository to your local machine.
 
             ```bash
             git clone <repository-url>
