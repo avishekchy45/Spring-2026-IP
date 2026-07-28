@@ -81,52 +81,64 @@ By the end of Week 3, complete the following practical tasks:
 
 ---
 
-2. Practice collaborative Git workflows, including cloning repositories, creating branches, and submitting pull requests for code review. Follow the steps below:
-   - **Accept Repository Invitation**
-     - Check your email for a repository collaborator invitation.
-     - Click the acceptance link to gain access to the repo.
-   - Clone the Repository.
-   - Clone the repository to your local machine.
-      ```bash
-      git clone <repository-url>
-      cd <repository-name>
-      ``` 
-> **Note:** You may alternatively fork the repository first, then clone your fork, if you have not received the invitation.
+2.  Practice collaborative Git workflows, including cloning repositories, creating branches, and submitting pull requests for code review. Follow the steps below:
+    - **Accept Repository Invitation**
+      - Check your email for a repository collaborator invitation.
+      - Click the acceptance link to gain access to the repo.
+    - Clone the Repository.
+    - Clone the repository to your local machine.
 
-   - **Create a Branch**
-     - Create a new branch using the following naming fomats: `submission-StudentID`. **Replace `StudentID` with your actual student ID number.** Example:
+            ```bash
+            git clone <repository-url>
+            cd <repository-name>
+            ```
+
+      > **Note:** You may alternatively fork the repository first, then clone your fork, if you have not received the invitation.
+
+    - **Create a Branch**
+      - Create a new branch using the following naming fomats: `submission-StudentID`. **Replace `StudentID` with your actual student ID number.** Example:
+
         ```bash
         git checkout -b submission-1234567890
         ```
 
-   - **Navigate to Your Assigned Folder**
-     - Open the folder assigned to you in the repository.
+    - **Navigate to Your Assigned Folder**
+      - Open the folder assigned to you in the repository.
+
         ```bash
         cd <assigned-folder-name>
         ```
-   - **Create Your Student Profile File**
-     - Each student must upload one text file following these requirements:
-       - **Filename:** `StudentID.txt` (e.g., `1234567890.txt`)
-       - **Location:** Your assigned folder
-       - **File Contents:**
-         Create a text file with the following information:
+
+    - **Create Your Student Profile File**
+      - Each student must upload one text file following these requirements:
+        - **Filename:** `StudentID.txt` (e.g., `1234567890.txt`)
+        - **Location:** Your assigned folder
+        - **File Contents:**
+          Create a text file with the following information:
+
           ```
           Name: [Your Full Name]
           Student ID: [Your Full Student ID]
           Department: [Your Department]
           Favourite Programming Language: [Your Preferred Language]
           ```
-   - **Submit via Pull Request**
-     - Stage and commit your changes.
-       ```bash
-       git add .
-       git commit -m "Add lab task - [Your ID]"
-       ```
-     - Push your branch.
-       ```bash
-       git push origin <branch-name>
-       ```
-     - Go to the repository on GitHub and create a Pull Request from your branch to `main`.
 
-   > **Note** Branch protection is enabled on the repository. This means you cannot push directly to the main branch. All changes must be submitted and reviewed through Pull Requests before merging.
+    - **Submit via Pull Request**
+      - Stage and commit your changes.
+
+        ```bash
+        git add .
+        git commit -m "Add lab task - [Your ID]"
+        ```
+
+      - Push your branch.
+
+        ```bash
+        git push origin <branch-name>
+        ```
+
+      - Go to the repository on GitHub and create a Pull Request from your branch to `main`.
+
+> **Note** Branch protection is enabled on the repository. This means you cannot push directly to the main branch. All changes must be submitted and reviewed through Pull Requests before merging.
+
 ---
