@@ -1,2 +1,4 @@
 Name: A. Kawsar
-id: 1129 Sem & sec: 3D
+Student Id: 0222510005101129 Sem&sec: 3D
+Department:CSE 
+Favourite programming lang: JS
