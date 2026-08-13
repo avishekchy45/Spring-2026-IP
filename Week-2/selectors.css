@@ -1,0 +1,85 @@
+/* Universal */
+* {
+  margin: 30px;
+}
+
+/* Element */
+h1 {
+  margin: 0 auto;
+}
+p {
+  color: blue;
+}
+
+/* ID */
+#title {
+  color: chartreuse;
+  text-align: center;
+  width: 850px;
+  height: 100px;
+  /* padding: 5px; */
+  border: 5px dashed gray;
+  /* margin: 5px; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+}
+
+/* Class */
+.info {
+  color: brown;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Group */
+.message,
+#button_div {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Descendant */
+div p {
+  color: green;
+  text-align: center;
+}
+
+/* Child */
+div > p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Attribute */
+button[type="submit"] {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Pseudo-classes */
+a:link {
+  font-size: 30px;
+  text-decoration: none;
+  color: #00ff00;
+}
+a:visited {
+  color: #00ff00;
+}
+a:hover {
+  color: #f00909;
+}
+a:active {
+  color: blue;
+}
+a:focus {
+  color: #ff00ff;
+}
