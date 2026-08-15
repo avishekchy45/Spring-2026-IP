@@ -1,4 +1,0 @@
-Name: Mark Zuckerberg 
-Student ID: 1234567891
-Department: CSE
-Favourite Programming Language: English
