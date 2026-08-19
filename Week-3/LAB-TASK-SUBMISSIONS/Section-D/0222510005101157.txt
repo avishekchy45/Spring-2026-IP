@@ -1,4 +1,0 @@
-Name: Annesha Mallick
-Student ID: 0222510005101157
-Department: Computer Science and Engineering
-Favourite Programming Language: Java
