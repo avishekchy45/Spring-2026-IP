@@ -1,4 +1,4 @@
-# Week 3 Notes: Version Control with Git and GitHub
+# Module 3 Notes: Version Control with Git and GitHub
 
 ## Topics Covered
 
@@ -51,9 +51,9 @@ Follow the slides shared on Google Classroom to learn more about the topics.
 
 ## Recommended Hands-on Lab Exercises
 
-By the end of Week 3, complete the following practical tasks:
+By the end of Module 3, complete the following practical tasks:
 
-1. Develop a simple website using HTML and CSS (from Weeks 1–2), manage it with Git, and host the source code on GitHub. Make at least **five meaningful commits** with descriptive messages. You may follow the steps below:
+1. Develop a simple website using HTML and CSS (from Module 2), manage it with Git, and host the source code on GitHub. Make at least **five meaningful commits** with descriptive messages. You may follow the steps below:
    - **Create Your Repository**
      - Create a project folder.
      - Initialize a Git repository.
@@ -82,7 +82,6 @@ By the end of Week 3, complete the following practical tasks:
 ---
 
 2.  Practice collaborative Git workflows, including cloning repositories, creating branches, and submitting pull requests for code review. Follow the steps below:
-
     - **Accept Repository Invitation**
       - Check your email for a repository collaborator invitation.
       - Click the acceptance link to gain access to the repo.
@@ -90,10 +89,10 @@ By the end of Week 3, complete the following practical tasks:
     - **Clone the Repository**
       - Clone the repository to your local machine.
 
-            ```bash
-            git clone <repository-url>
-            cd <repository-name>
-            ```
+        ```bash
+        git clone <repository-url>
+        cd <repository-name>
+        ```
 
       > **Note:** You may alternatively fork the repository first, then clone your fork, if you have not received the invitation.
 
@@ -141,6 +140,6 @@ By the end of Week 3, complete the following practical tasks:
 
       - Go to the repository on GitHub and create a Pull Request from your branch to `main`.
 
-> **Note** Branch protection is enabled on the repository. This means you cannot push directly to the main branch. All changes must be submitted and reviewed through Pull Requests before merging.
+> **Note:** Branch protection is enabled on the repository. This means you cannot push directly to the main branch. All changes must be submitted and reviewed through Pull Requests before merging.
 
 ---
