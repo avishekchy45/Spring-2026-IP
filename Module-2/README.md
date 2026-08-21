@@ -1,10 +1,10 @@
-# Week 2 Notes: HTML and CSS Fundamentals (HTML5 and CSS3)
+# Module 2 Notes: HTML and CSS Fundamentals (HTML5 and CSS3)
 
-## Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/Week-2)
+## Code Link: [Github](https://github.com/avishekchy45/Spring-2026-IP/tree/main/module-2)
 
 ## Project Setup Instructions: [Getting Started](getting-started.md)
 
-## 1. HTML Document Structure ([Code](index.html))
+## HTML Document Structure ([Code](index.html))
 
 - What is HTML?
   - HyperText Markup Language
@@ -54,7 +54,7 @@
 
 ---
 
-## 2. Semantic HTML5 Elements ([Code](semantic.html))
+## Semantic HTML5 Elements ([Code](semantic.html))
 
 - What is Semantic HTML?
   - Uses tags that clearly define the purpose of a webpage's content both to the browser and the developer
@@ -95,7 +95,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 3. Text Formatting ([Code](text_formatting.html))
+## Text Formatting ([Code](text_formatting.html))
 
 - Heading tags
 - Paragraph
@@ -113,7 +113,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 4. Lists ([Code](lists.html))
+## Lists ([Code](lists.html))
 
 - Ordered List
 - Unordered List
@@ -122,7 +122,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 5. Tables ([Code](tables.html))
+## Tables ([Code](tables.html))
 
 - Table structure
 - Rows
@@ -134,7 +134,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 6. Images ([Code](images.html))
+## Images ([Code](images.html))
 
 - Image formats
 - Relative vs Absolute path
@@ -143,7 +143,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 7. Hyperlinks ([Code](links.html))
+## Hyperlinks ([Code](links.html))
 
 - Absolute URL
 - Relative URL
@@ -155,7 +155,7 @@ Semantic HTML improves document meaning for browsers, search engines, and assist
 
 ---
 
-## 8. Forms ([Code](forms.html))
+## Forms ([Code](forms.html))
 
 - Purpose of forms
 - Form structure
@@ -171,7 +171,7 @@ HTML5 introduces semantic input types (such as `email`, `url`, `number`, and `da
 
 ---
 
-## 9. Multimedia ([Code](multimedia.html))
+## Multimedia ([Code](multimedia.html))
 
 - Audio
 - Video
@@ -181,7 +181,7 @@ HTML5 introduces semantic input types (such as `email`, `url`, `number`, and `da
 
 ---
 
-## 10. Accessibility Basics
+## Accessibility Basics
 
 - What is Web Accessibility?
 - Why accessibility matters
@@ -196,7 +196,7 @@ Correct semantic HTML, descriptive `alt` text, and associated `<label>` elements
 
 ---
 
-## 11. HTML Validation
+## HTML Validation
 
 - Why validate HTML
 - Common HTML errors
@@ -209,7 +209,7 @@ HTML validation checks for structural and specification errors, such as missing 
 
 ---
 
-## 12. CSS Introduction
+## CSS Introduction
 
 - What is CSS?
   - Cascading Style Sheets
@@ -221,7 +221,7 @@ HTML validation checks for structural and specification errors, such as missing 
 
 ---
 
-## 13. Inline vs Internal vs External CSS ([Code](inline-internal-external-css.html))
+## Inline vs Internal vs External CSS ([Code](inline-internal-external-css.html))
 
 - Inline CSS
 - Internal CSS
@@ -231,7 +231,7 @@ HTML validation checks for structural and specification errors, such as missing 
 
 ---
 
-## 14. CSS Selectors ([Code](selectors.html))
+## CSS Selectors ([Code](selectors.html))
 
 - Universal selector (`*`)
 - Element selector
@@ -247,17 +247,44 @@ CSS selectors define which elements receive styling, and combinators describe re
 
 ---
 
+## CSS Variables ([Code](css-variables.html))
+
+- CSS Variables (Custom Properties) allow reusable values to be defined once and referenced throughout a stylesheet.
+
+- Benefits:
+  - Easier maintenance
+  - Consistent design
+  - Quick theme changes
+  - Reduced repetition
+
+---
+
+## Introduction to Sass ([Code](sass.html))
+
+- **Sass (Syntactically Awesome Style Sheets)** is a CSS preprocessor that extends CSS with features for writing cleaner, more maintainable stylesheets. Browsers do **not** understand Sass directly, so Sass files must be compiled into standard CSS before deployment.
+
+- Why Sass?
+  - Large projects may contain thousands of lines of CSS. Sass helps by providing:
+    - Variables
+    - Nesting
+    - Mixins
+    - Inheriting
+    - Partial files
+    - Better project organization
+
+Many modern frameworks and build tools (such as Bootstrap's source code, Vite, and Webpack workflows) use Sass during development.
+
+---
+
 ## Recommended Hands-on Lab Exercises
 
-By the end of Week 2, complete the following practical tasks:
+By the end of Module 2, complete the following practical tasks:
 
 1. Create a personal profile webpage using semantic HTML5 elements.
 2. Design a university course registration form using HTML5 form controls and built-in validation (`required`, `type="email"`, etc.).
 3. Create a class routine or student result table.
 4. Build a webpage containing images, hyperlinks, lists, audio, and video.
-5. Apply inline, internal, and external CSS to compare their effects.
-6. Style the webpage using element, class, ID, descendant, and child selectors.
-7. Validate the HTML document using the W3C HTML Validator and correct any reported errors.
+5. Style the webpage using element, class, ID, descendant, and child selectors.
 
 [accessibility]: https://devdoc.net/web/developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML.html/ "HTML: A good basis for accessibility - Learn web development | MDN"
 [forms]: https://www.sitepoint.com/html5-forms-markup/ "HTML5 Forms: The Markup — SitePoint"

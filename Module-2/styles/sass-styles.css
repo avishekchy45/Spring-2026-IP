@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#myButton {
+  margin: 1rem;
+  padding: 1rem;
+  top: 1rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+  color: white;
+  background: royalblue;
+}
+#myButton:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton2 {
+  color: white;
+  background: royalblue;
+}
+#myButton2:hover {
+  color: royalblue;
+  background: white;
+}
+#myButton2 {
+  margin: 1rem;
+  padding: 1rem;
+  top: 1rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+}
+
+button,
+#myButton10,
+#myButton9,
+#myButton8,
+#myButton7,
+#myButton6,
+#myButton5,
+#myButton4,
+#myButton3 {
+  margin: 1rem;
+  padding: 1rem;
+  top: 1rem;
+  font-weight: bolder;
+  border-radius: 1rem;
+}
+
+#myButton3 {
+  color: white;
+  background: royalblue;
+}
+#myButton3:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton4 {
+  color: white;
+  background: royalblue;
+}
+
+#myButton5 {
+  color: white;
+  background: royalblue;
+}
+#myButton5:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton6 {
+  color: white;
+  background: royalblue;
+}
+#myButton6:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton7 {
+  color: white;
+  background: royalblue;
+}
+#myButton7:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton8 {
+  color: white;
+  background: royalblue;
+}
+#myButton8:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton9 {
+  color: white;
+  background: royalblue;
+}
+#myButton9:hover {
+  color: royalblue;
+  background: white;
+}
+
+#myButton10 {
+  color: white;
+  background: royalblue;
+}
+#myButton10:hover {
+  color: royalblue;
+  background: white;
+}
+
+/*# sourceMappingURL=sass-styles.css.map */
