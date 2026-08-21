@@ -15,6 +15,7 @@
 			"hossaini.bootstrap-intellisense",
 			"esbenp.prettier-vscode",
 			"ritwickdey.LiveServer",
+			"glenn2223.live-sass"
 		]
 	}
 }
