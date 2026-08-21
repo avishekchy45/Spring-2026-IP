@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* background-image: url("bg.png"); */
+      /* background-size: 100% 100%;
+      background-repeat: no-repeat; */
+      border: 5px solid red;
+      background-color: gray;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 5px 10px;
+      padding: 10px;
+    }
+
+    .container>div {
+      padding: 40px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .header {
+      border: 4px dotted red;
+      background-color: royalblue;
+      grid-column: 1 / span 3;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .menu {
+      border: 4px dotted blue;
+      grid-column: 1 / span 3;
+    }
+
+    .main {
+      border: 4px dotted red;
+      grid-column: 1 / span 3;
+    }
+
+    .sidebar {
+      /* border: 4px dotted blue; */
+      /* grid-column: 3 / span 1; */
+      display: none;
+    }
+
+    .footer {
+      border: 4px dotted greenyellow;
+      grid-column: 1 / span 3;
+    }
+
+    /* FOR DESKTOP LARGE SCREEN */
+    @media only screen and (min-width: 768px) {
+      .header {
+        grid-column: 1 / span 3;
+      }
+
+      .menu {
+        grid-column: 1 / span 1;
+      }
+
+      .main {
+        grid-column: 2 / span 1;
+      }
+
+      .sidebar {
+        display: block;
+        grid-column: 3 / span 1;
+      }
+
+      .footer {
+        grid-column: 1 / span 3;
+      }
+
+      /* .container {
+        flex-direction: column;
+      } */
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">Header</div>
+
+    <div class="menu">Menu</div>
+
+    <div class="main">Main</div>
+
+    <div class="sidebar">Sidebar</div>
+
+    <div class="footer">Footer</div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* background-image: url("bg.png"); */
+      /* background-size: 100% 100%; */
+      /* background-repeat: no-repeat; */
+      border: 5px solid red;
+      background-color: gray;
+    }
+
+    .grid {
+      display: grid;
+      /* grid-template-columns: auto auto auto; */
+      grid-template-columns: 1fr 2fr 1fr;
+      /* grid-template-columns: repeat(3, 1fr); */
+      /* grid-template-rows: 80px 200px 100px; */
+      /* grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'sidebar'
+        'footer'; */
+      row-gap: 5px;
+      column-gap: 10px;
+      /* gap: 5px 10px; */
+      /* gap: 5px; */
+      padding: 10px;
+    }
+
+    .grid div {
+      /* background: orange; */
+      padding: 40px;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .header {
+      border: 4px dotted red;
+      background-color: royalblue;
+      /* grid-column-start: 1; */
+      /* grid-column-end: 4; */
+      /* grid-column: 1 / 4; */
+      /* grid-column: 1 / span 3; */
+      /* grid-row-start: 1; */
+      /* grid-row-end: 4; */
+      /* grid-row: 1 / 3; */
+      /* grid-row: 1 / span 3; */
+      /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
+      grid-area: 1 / 1 / span 1 / span 3;
+      /* grid-area: header; */
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .menu {
+      border: 4px dotted blue;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .main {
+      border: 4px dotted blue;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    .sidebar {
+      border: 4px dotted blue;
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+    }
+
+    .footer {
+      border: 4px dotted greenyellow;
+      background-color: royalblue;
+      grid-column: 1 / 4;
+      grid-row: 4 / 5;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grid">
+
+    <div class="header">Header</div>
+
+    <div class="menu">Menu</div>
+
+    <div class="main">Main</div>
+
+    <div class="sidebar">Sidebar</div>
+
+    <div class="footer">Footer</div>
+
+  </div>
+
+</body>
+
+</html>

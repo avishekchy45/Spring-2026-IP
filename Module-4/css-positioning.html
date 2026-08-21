@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* An ancestor element with relative positioning serves as an absolute reference point */
+    .parent-container {
+      position: relative;
+      border: 3px dashed #333;
+      padding: 20px;
+      margin: 40px;
+      height: 300px;
+      background-color: #f9f9f9;
+    }
+
+    .box {
+      width: 120px;
+      height: 60px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    /* 1. Static: Default behavior */
+    .static-box {
+      position: static;
+      background-color: #34495e;
+      top: 20px;
+      /* This property will be ignored because the box is static */
+    }
+
+    /* 2. Relative: Moves 20px down and 30px right from its native position */
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: #3498db;
+    }
+
+    /* 3. Absolute: Locked to the top right corner of .parent-container */
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e74c3c;
+    }
+
+    /* 4. Fixed: Glued to the bottom-right corner of the browser window */
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #9b59b6;
+    }
+
+    /* 5. Sticky: Scrolls normally until it touches the top of the viewport */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: #2ecc71;
+      margin-bottom: 30px;
+      width: 100%;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box sticky-box">Sticky Header</div>
+
+  <p>Scroll down the page to observe the sticky header and the fixed button behaviors.</p>
+
+  <div class="parent-container">
+    <div class="box static-box">Static Box</div>
+    <div class="box relative-box">Relative Box</div>
+    <div class="box absolute-box">Absolute Box</div>
+  </div>
+
+  <input class="box fixed-box" type="button" value="Back to Top" />
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+
+</body>
+
+</html>
