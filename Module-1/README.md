@@ -1,4 +1,4 @@
-# Week 1 Notes: Introduction to Internet and Web Technologies
+# Module 1 Notes: Introduction to Internet and Web Technologies
 
 ## Topics Covered
 
