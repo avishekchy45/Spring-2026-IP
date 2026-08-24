@@ -7,7 +7,8 @@
 		"hossaini.bootstrap-intellisense",
 		"esbenp.prettier-vscode",
 		"ritwickdey.LiveServer",
-		"glenn2223.live-sass"
+		"glenn2223.live-sass",
+		"bradlc.vscode-tailwindcss"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []

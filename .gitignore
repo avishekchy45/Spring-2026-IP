@@ -6,3 +6,6 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Ignore all contents of the node_modules folder
+node_modules/
