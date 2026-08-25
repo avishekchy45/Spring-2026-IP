@@ -301,7 +301,7 @@ Icons should not unnecessarily replace meaningful text, and decorative icons can
 
 ### Setting Up Tailwind ([Code](tailwind/setup.html))
 
-For current Tailwind, the official documentation provides CLI, Vite, PostCSS and framework-based installation approaches. The CLI setup installs `tailwindcss` and `@tailwindcss/cli`. ([Tailwind CSS][7])
+For current Tailwind, the official documentation provides CLI, Vite, PostCSS and framework-based installation approaches. The CLI setup installs `tailwindcss` and `@tailwindcss/cli`.
 
 The easiest approach is to use the Bootstrap CDN.
 
@@ -357,8 +357,8 @@ Tailwind modal dialog components can be used to create pop-up boxes for things l
 
 ## Build same interface using Bootstrap and Tailwind
 
-- ([Bootstrap](comparison/bootstrap.html))
-- ([Taliwind](comparison/tailwind.html))
+- [Bootstrap](comparison/bootstrap.html)
+- [Taliwind](comparison/tailwind.html)
 
 Think:
 
@@ -370,7 +370,11 @@ Think:
 
 By the end of Module 5, complete the following practical tasks:
 
-1. Build a **Responsive Course/Product Website**. Implement it using **Bootstrap first**. The page should contain:
+1. Recreate the responsive website created in Module 4 using Bootstrap.
+
+---
+
+2. Build a **Responsive Course/Product Website**. Implement it using **Bootstrap first**. The page should contain:
 
 ```text
 ┌──────────────────────────────────────────┐
@@ -417,10 +421,11 @@ By the end of Module 5, complete the following practical tasks:
   - Desktop
 - Do **not** write custom CSS unless necessary.
 
-2. Recreate the same website using **Tailwind CSS**.
+---
+
+3. Recreate the same website of Task 2 using **Tailwind CSS**.
+
+---
 
 [bootstrap]: https://getbootstrap.com/docs/5.3/layout/grid/ "Grid system · Bootstrap v5.3"
 [tailwind]: https://tailwindcss.com/docs/responsive-design "Responsive design - Core concepts - Tailwind CSS"
-[7]: https://tailwindcss.com/docs/installation/tailwind-cli "Tailwind CLI - Tailwind CSS"
-[8]: https://tailwindcss.com/docs/installation/using-vite?rewritestatus=3 "Installing Tailwind CSS with Vite - Tailwind CSS"
-[9]: https://tailwindcss.com/docs/flex-direction "flex-direction - Flexbox & Grid - Tailwind CSS"
