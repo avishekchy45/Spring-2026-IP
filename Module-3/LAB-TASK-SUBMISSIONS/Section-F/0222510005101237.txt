@@ -1,0 +1,8 @@
+Name : Sonjoy kantai sushil
+ID: 0222510005101237
+Sction : F
+Session : Spring 2026
+Program : B.Sc in CSE
+Department : Computer Science and Engineering (CSE)
+University : Premier University, Chittagong
+Favourite Programming Language: C++
