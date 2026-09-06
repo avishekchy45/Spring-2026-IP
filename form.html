@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Student Enrollment</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-6">
+
+        <div class="card shadow border-0">
+
+          <div class="card-header bg-success text-white text-center py-3">
+            <h3 class="mb-1">Student Enrollment</h3>
+            <small>Complete the form to join our course</small>
+          </div>
+
+          <div class="card-body p-4">
+
+            <form>
+
+              <!-- Student Name -->
+              <div class="mb-3">
+                <label for="studentName" class="form-label">
+                  Student Name
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="studentName"
+                  placeholder="Enter your full name"
+                  required
+                >
+              </div>
+
+              <!-- Email & Phone -->
+              <div class="row">
+
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required
+                  >
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">
+                    Phone Number
+                  </label>
+
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="01XXXXXXXXX"
+                  >
+                </div>
+
+              </div>
+
+              <!-- Date of Birth -->
+              <div class="mb-3">
+                <label for="dob" class="form-label">
+                  Date of Birth
+                </label>
+
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                >
+              </div>
+
+              <!-- Course -->
+              <div class="mb-3">
+                <label for="course" class="form-label">
+                  Select Course
+                </label>
+
+                <select id="course" class="form-select">
+                  <option selected disabled>Choose a course</option>
+                  <option>Web Design</option>
+                  <option>JavaScript Development</option>
+                  <option>Bootstrap</option>
+                  <option>Full Stack Development</option>
+                </select>
+              </div>
+
+              <!-- Learning Mode -->
+              <div class="mb-3">
+                <label class="form-label d-block">
+                  Learning Mode
+                </label>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="mode"
+                    id="online"
+                    value="online"
+                  >
+
+                  <label class="form-check-label" for="online">
+                    Online
+                  </label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="mode"
+                    id="offline"
+                    value="offline"
+                  >
+
+                  <label class="form-check-label" for="offline">
+                    Offline
+                  </label>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label">
+                  Why do you want to join?
+                </label>
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Write something about your goal..."
+                ></textarea>
+              </div>
+
+              <!-- Agreement -->
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="terms"
+                  required
+                >
+
+                <label class="form-check-label" for="terms">
+                  I agree to the course terms and conditions.
+                </label>
+              </div>
+
+              <!-- Buttons -->
+              <div class="d-flex gap-2">
+
+                <button
+                  type="submit"
+                  class="btn btn-success flex-grow-1"
+                >
+                  Enroll Now
+                </button>
+
+                <button
+                  type="reset"
+                  class="btn btn-outline-secondary"
+                >
+                  Clear
+                </button>
+
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="card-footer text-center text-muted">
+            <small>© 2026 Student Enrollment Portal</small>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
