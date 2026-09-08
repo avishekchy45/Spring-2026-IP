@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<students>
+    <student>
+        <id>101</id>
+        <name>Steve Jobs</name>
+        <department>CSE</department>
+    </student>
+
+    <student>
+        <id>102</id>
+        <name>Bill Gates</name>
+        <department>IT</department>
+    </student>
+</students>

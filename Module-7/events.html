@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 id="title">Original Title</h1>
+  <p id="message">Hello World</p>
+
+  <button id="changeBtn">Change Content</button>
+  <button id="addBtn">Add Paragraph</button>
+
+  <input id="name" type="text" />
+
+  <script>
+    document.getElementById("changeBtn").addEventListener("click", function (event) {
+      console.log(event);
+      document.getElementById("message").textContent = "Button clicked!";
+    });
+
+    const title = document.querySelector("#title");
+    const message = document.querySelector("#message");
+    const changeBtn = document.querySelector("#changeBtn");
+    const addBtn = document.querySelector("#addBtn");
+    const input = document.querySelector("#name");
+
+    // changeBtn.addEventListener("click", function (event) {
+    changeBtn.addEventListener("click", (event) => {
+      console.log("Button clicked!");
+      console.log(event);
+
+      title.textContent = "DOM Manipulation";
+      message.textContent = "The content has been changed using JavaScript.";
+
+      title.classList.add("update");
+    });
+
+    document.querySelector("#addBtn").addEventListener("click", () => {
+      const paragraph = document.createElement("p");
+
+      paragraph.textContent = "This paragraph was created dynamically.";
+
+      document.body.append(paragraph);
+    });
+
+    input.addEventListener("input", (event) => {
+      console.log("Current value:", event.target.value);
+    });
+  </script>
+</body>
+
+</html>

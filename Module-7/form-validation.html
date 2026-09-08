@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form id="registerForm">
+    
+    <input id="username" type="text" placeholder="Username" />
+
+    <input id="email" type="email" placeholder="Email" />
+
+    <input id="password" type="password" placeholder="Password" />
+
+    <button type="submit">Register</button>
+
+    <p id="error"></p>
+    <p id="success"></p>
+
+  </form>
+  
+  <script>
+    const form = document.querySelector("#registerForm");
+    const error = document.querySelector("#error");
+    const success = document.querySelector("#success");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const username = document.querySelector("#username").value.trim();
+      const email = document.querySelector("#email").value.trim();
+      const password = document.querySelector("#password").value;
+
+      if (username.length < 3) {
+        error.textContent = "Username must contain at least 3 characters.";
+        return;
+      }
+
+      if (!email.includes("@")) {
+        error.textContent = "Please enter a valid email.";
+        return;
+      }
+
+      if (password.length < 8) {
+        error.textContent = "Password must contain at least 8 characters.";
+        return;
+      }
+
+      error.textContent = "";
+      success.textContent = "Registration successful!";
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 101,
+    "name": "Steve Jobs",
+    "department": "CSE",
+    "skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Bill Gates",
+    "department": "IT",
+    "skills": [
+      "C#",
+      ".NET",
+      "SQL"
+    ]
+  }
+]
