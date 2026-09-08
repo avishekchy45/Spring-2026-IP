@@ -1,3 +1,3 @@
-Nanjiba fairoj tashfiah
-1222
-
+Name: Nanjiba fairoj tashfiah
+id : 0222510005101222
+dep: cse
