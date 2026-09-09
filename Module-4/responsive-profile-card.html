@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Profile Cards</title>
+
+    <style>
+
+        /* Box sizing */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* CSS Grid */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            padding: 25px;
+            border: 2px solid #ddd;
+            margin: 10px;
+
+            /* Needed for absolute badge */
+            position: relative;
+
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Profile Image */
+        .profile-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        /* Flexbox */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Name */
+        .card-content h2 {
+            font-size: 24px;
+        }
+
+        /* Description */
+        .card-content p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Absolute Badge */
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+            background-color: green;
+            color: white;
+
+            padding: 5px 10px;
+            border-radius: 20px;
+
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .profile-card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+
+            border: none;
+            border-radius: 6px;
+
+            background-color: black;
+            color: white;
+
+            cursor: pointer;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 20px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 769px) and (max-width: 1000px) {
+
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Profile Cards</h1>
+
+    <div class="card-container">
+
+        <!-- Card 1 -->
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img
+                src="https://i.pravatar.cc/300?img=1"
+                alt="Alex profile picture"
+            >
+
+            <div class="card-content">
+
+                <h2>Alex</h2>
+
+                <p>
+                    Frontend Developer passionate about
+                    HTML, CSS and responsive web design.
+                </p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="profile-card">
+
+            <span class="badge">NEW</span>
+
+            <img
+                src="https://i.pravatar.cc/300?img=2"
+                alt="Sarah profile picture"
+            >
+
+            <div class="card-content">
+
+                <h2>Sarah</h2>
+
+                <p>
+                    UI Designer who loves creating
+                    clean and beautiful interfaces.
+                </p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="profile-card">
+
+            <span class="badge">ONLINE</span>
+
+            <img
+                src="https://i.pravatar.cc/300?img=3"
+                alt="John profile picture"
+            >
+
+            <div class="card-content">
+
+                <h2>John</h2>
+
+                <p>
+                    Web developer interested in
+                    modern CSS and JavaScript.
+                </p>
+
+                <button>View Profile</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
