@@ -287,7 +287,7 @@ Pending
 
 ---
 
-## Fetch API ([Code](fetch.html))
+## Fetch API ([Code](fetch.js))
 
 - What Fetch API is
   - The Fetch API is the modern interface for network requests and is a promise-based replacement for `XMLHttpRequest`. ([Fetch API][FetchAPI])
@@ -425,6 +425,57 @@ Saying **“jQuery is dead”** would be inaccurate. jQuery **4.0.0 was released
 
 ---
 
+## Web Storage API ([Code](storage.js))
+
+- Browser/client-side storage
+- `localStorage`
+- `sessionStorage`
+- Key-value storage
+- Persistence across page reloads
+- Persistence after closing/reopening the browser
+- Origin-based storage
+- `setItem()`
+- `getItem()`
+- `removeItem()`
+- `clear()`
+- `key()`
+- `length`
+
+### `localStorage` vs `sessionStorage`
+
+| Feature              | `localStorage`                | `sessionStorage`       |
+| -------------------- | ----------------------------- | ---------------------- |
+| Scope                | Origin                        | Origin + browser tab   |
+| Survives page reload | Yes                           | Yes                    |
+| Survives closing tab | Yes                           | No                     |
+| Typical use          | Preferences, settings         | Temporary session data |
+| API                  | `setItem()`, `getItem()` etc. | Same                   |
+
+`sessionStorage` is separated by browser tab and is cleared when that page session ends, while `localStorage` persists across browser sessions. ([Web Storage API][web-storage-api])
+
+---
+
+## Cookies ([Code](cookies.js))
+
+- What is cookie?
+- Cookie name/value
+- Expiration
+- Domain/path
+- Cookies and HTTP requests
+- Session cookies vs persistent cookies
+- `document.cookie`
+- Cookie attributes
+- `HttpOnly`, `Secure`, `SameSite`
+- Why cookies are important for sessions/authentication?
+
+Cookies are different from Web Storage because cookies are associated with HTTP and are sent with requests to the relevant server, whereas `localStorage` and `sessionStorage` are browser storage mechanisms that are not automatically sent with every HTTP request. ([Cookies][cookies])
+
+> **Do not store passwords or other sensitive information in `localStorage` or ordinary JavaScript-accessible cookies.**
+
+JavaScript cannot read an `HttpOnly` cookie, which is useful for protecting session credentials from client-side script access.
+
+---
+
 ## Recommended Hands-on Lab Exercises
 
 By the end of Module 7, complete the following practical task:
@@ -545,9 +596,26 @@ DOM manipulation
 Display weather
 ```
 
+---
+
+5. Build a **Student Profile Manager** that:
+
+- Uses HTML/CSS for the interface.
+- Uses `addEventListener()` for interactions.
+- Validates a student form.
+- Stores student information in `localStorage`.
+- Converts objects using `JSON.stringify()` / `JSON.parse()`.
+- Uses `sessionStorage` for temporary session information.
+- Fetches additional data from a REST API.
+- Displays the API data dynamically using DOM manipulation.
+- Handles asynchronous errors.
+- Optionally demonstrates cookies.
+
 [network-requests]: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Network_requests? "Making network requests with JavaScript - Learn web development | MDN"
 [XMLHttpRequestAPI]: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API? "XMLHttpRequest API - Web APIs | MDN"
 [FetchAPI]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API? "Fetch API - Web APIs | MDN"
 [SOP]: https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy? "Same-origin policy - Security | MDN"
 [CORS]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS? "Cross-Origin Resource Sharing (CORS) - HTTP | MDN"
 [jQuery]: https://jquery.com/support/ "jQuery Support | jQuery"
+[web-storage-api]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API "Web Storage API - Web APIs | MDN"
+[cookies]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies "Using HTTP cookies - HTTP | MDN"

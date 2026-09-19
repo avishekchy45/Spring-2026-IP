@@ -12,12 +12,30 @@
   <h1 id="title">Original Title</h1>
   <p id="message">Hello World</p>
 
+  <button onclick="showMessage()">Show Alert</button>
+  <button id="alertBtn">Show Alert</button>
   <button id="changeBtn">Change Content</button>
   <button id="addBtn">Add Paragraph</button>
 
   <input id="name" type="text" />
 
   <script>
+    // Inline event handler
+    function showMessage() {
+      alert("Hello!");
+    }
+    // function showMessage() {
+    //   const name = prompt("Please enter your name:");
+    //   alert(`Hello, ${name}!`);
+    // }
+
+    // Event-handler property
+    const alertBtn = document.querySelector("#alertBtn");
+    alertBtn.onclick = function () {
+      alert("Button clicked!");
+    };
+
+    // Modern approach 
     document.getElementById("changeBtn").addEventListener("click", function (event) {
       console.log(event);
       document.getElementById("message").textContent = "Button clicked!";
